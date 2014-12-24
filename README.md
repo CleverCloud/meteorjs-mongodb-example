@@ -27,8 +27,10 @@ If you already have an application with Meteor.js, all you have to do is:
 If you don't already have an app, feel free to fork this one to test !
 
 1. [Signup](https://api.clever-cloud.com/v2/github/signup) on Clever-Cloud with Github
-2. Create a Node.js application and choose username/clever-meteorjs within the suggested github applications
-3. Make it run by clicking on the "Play" top-right button
-4. Read deployment logs
-5. Visit your application by clicking on the "Arrow" top-right button
-6. Have fun :)
+2. Create a Node.js application and choose your application (here, it would be BlackYoup/clever-meteorjs) within the Github suggestions
+3. Create a MongoDB addon and go in its configuration panel, copy ``Hostname``, ``Database``, ``User`` and ``Password`` somewhere (in a text file for exemple)
+4. Go in your Node.js application, panel "Environment Variables" and create a variable with name ``MONGO_URL`` and value ``mongodb://<user>:<password>@<host>/<database>``. (These values are the one of your MongoDB addon you've just copied)
+5. Make it run by clicking on the "Play" top-right button
+6. Read deployment logs
+7. Visit your application by clicking on the "Arrow" top-right button
+8. Have fun :)
