@@ -1,4 +1,4 @@
-clever-meteor.js
+demo-meteorjs
 =================================
 
 Demo of Meteor.js on Clever-Cloud

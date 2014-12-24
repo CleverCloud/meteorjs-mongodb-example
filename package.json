@@ -1,5 +1,5 @@
 {
-  "name": "clever-deployment",
+  "name": "demo-meteorjs",
   "version": "1.0.0",
   "description": "Meteor.js deployment demo for Clever-Cloud",
   "scripts": {
