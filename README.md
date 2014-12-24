@@ -34,3 +34,7 @@ If you don't already have an app, feel free to fork this one to test !
 6. Read deployment logs
 7. Visit your application by clicking on the "Arrow" top-right button
 8. Have fun :)
+
+### Why do I need to create a MongoDB addon on CleverCloud ? Meteor already has its own...
+
+Yes, it does. But your application is created in a virtual machine. If you stop / restart / your application, the virtual machine is destroyed and you will loose your mongodb database. The addon will allow you to keep your data, have automatic backups and more system resources for your meteor.js application.
