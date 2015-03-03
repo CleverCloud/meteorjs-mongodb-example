@@ -16,8 +16,7 @@ cd "$currentPath"
 # Note: When using "meteorhacks:npm"
 # to prevent the error: "unknown package: npm-container"
 # (described in https://github.com/meteorhacks/npm/issues/49)
-# either add "packages/npm-container/index.js" & "packages/npm-container/package.js" to git
-# or uncomment the two fololowing lines:
+# uncomment the two following lines:
 #meteor remove npm-container
 #meteor run
 
