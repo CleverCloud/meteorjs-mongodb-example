@@ -1,18 +1,19 @@
 {
-  "name": "demo-meteorjs",
-  "version": "1.0.0",
-  "description": "Meteor.js deployment demo for Clever-Cloud",
-  "scripts": {
-    "start": "./start.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BlackYoup/clever-meteorjs.git"
-  },
-  "author": "Lefebvre Arnaud",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BlackYoup/clever-meteorjs/issues"
-  },
-  "homepage": "https://github.com/BlackYoup/clever-meteorjs"
+    "name": "demo-meteorjs",
+    "version": "1.0.0",
+    "description": "Meteor.js deployment demo for Clever-Cloud",
+    "scripts": {
+        "install": "./install.sh",
+        "start": "node my_app/main.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackYoup/clever-meteorjs.git"
+    },
+    "author": "Lefebvre Arnaud",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/BlackYoup/clever-meteorjs/issues"
+    },
+    "homepage": "https://github.com/BlackYoup/clever-meteorjs"
 }
