@@ -1,40 +1,25 @@
 demo-meteorjs
 =================================
 
-Demo of Meteor.js on Clever-Cloud
+Demo of deploying a Meteor.js application to Clever-Cloud
 
-## Install on your computer
+## Preparations before pushing your code to Clever-Cloud
 
-First, install [NPM](https://npmjs.org). Then:
-```
-  npm start
-```
+If you already have a Meteor.js application, all you have to do is:
 
-It will download and install meteor.js for you in ~/.meteor (default)
+1. Add the ``install.sh`` file from this repo to your project and make it executable ``chmod a+x install.sh``
+2. Add the ``package.json`` file from this repo to your project and customize it for your needs but be sure to leave the ``scripts`` section untouched: ``"scripts": { "install": "./install.sh", "start": "node my_app/main.js" }``
 
-
-## Deploy on Clever-Cloud
-
-### Existing Application
-
-If you already have an application with Meteor.js, all you have to do is:
-
-1. Add the ``start.sh`` file from this repo to your project
-2. Create a package.json file (with ``npm init``) and add in the ``scripts`` section: ``"start": "./start.sh"``
-
-### Deploy on Clever-Cloud
+### Deploying to Clever-Cloud
 
 If you don't already have an app, feel free to fork this one to test !
 
 1. [Signup](https://api.clever-cloud.com/v2/github/signup) on Clever-Cloud with Github
-2. Create a Node.js application and choose your application (here, it would be BlackYoup/clever-meteorjs) within the Github suggestions
-3. Create a MongoDB addon and go in its configuration panel, copy ``Hostname``, ``Database``, ``User`` and ``Password`` somewhere (in a text file for exemple)
-4. Go in your Node.js application, panel "Environment Variables" and create a variable with name ``MONGO_URL`` and value ``mongodb://<user>:<password>@<host>/<database>``. (These values are the one of your MongoDB addon you've just copied)
-5. Make it run by clicking on the "Play" top-right button
-6. Read deployment logs
+2. Create a Node.js application
+3. Create a MongoDB addon and check its credentials: ``Hostname``, ``Database``, ``User`` and ``Password``
+4. Go to "Environment Variables" and add the ``MONGO_URL`` for your MongoDB addon: ``mongodb://<user>:<password>@<host>/<database>``
+5. Add the remote Clever-Cloud repo to your project => ``git remote add clever git+ssh://git@push.par.clever-cloud.com/<your-app-id>.git``
+6. Push your code to Clever-Cloud => ``git push clever master``
+7. Watch the logs and wait for your app to start
 7. Visit your application by clicking on the "Arrow" top-right button
 8. Have fun :)
-
-### Why do I need to create a MongoDB addon on CleverCloud ? Meteor already has its own...
-
-Yes, it does. But your application is created in a virtual machine. If you stop / restart / your application, the virtual machine is destroyed and you will loose your mongodb database. The addon will allow you to keep your data, have automatic backups and more system resources for your meteor.js application.
