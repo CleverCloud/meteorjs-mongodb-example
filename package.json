@@ -8,12 +8,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackYoup/clever-meteorjs.git"
+        "url": "https://github.com/CleverCloud/demo-meteorjs"
     },
     "author": "Lefebvre Arnaud",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/BlackYoup/clever-meteorjs/issues"
+        "url": "https://github.com/CleverCloud/demo-meteorjs/issues"
     },
-    "homepage": "https://github.com/BlackYoup/clever-meteorjs"
+    "homepage": "https://github.com/CleverCloud/demo-meteorjs"
 }
