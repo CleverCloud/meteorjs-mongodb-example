@@ -7,7 +7,7 @@ currentPath=$(realpath ./)
 curl https://install.meteor.com/ | sh
 export PATH=/home/bas/.meteor:$PATH
 
-# Install demeteorize
+# Install demeteorizer
 cd ~/ && npm install demeteorizer
 
 # Go back to our project
