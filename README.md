@@ -18,9 +18,8 @@ If you don't already have an app, feel free to fork this one to test !
 2. Create a Node.js application
 3. Create a MongoDB addon and check its credentials: ``Hostname``, ``Database``, ``User`` and ``Password``
 4. Go to "Environment Variables" and add the ``MONGO_URL`` for your MongoDB addon: ``mongodb://<user>:<password>@<host>/<database>``
-5. Add the variable ``ROOT_URL`` with the value ``http://<your-app-id>.cleverapps.io``
-6. Add the remote Clever-Cloud repo to your project => ``git remote add clever git+ssh://git@push.par.clever-cloud.com/<your-app-id>.git``
-7. Push your code to Clever-Cloud => ``git push clever master``
-8. Watch the logs and wait for your app to start
-9. Visit your application by clicking on the "Arrow" top-right button
-10. Have fun :)
+5. Add the remote Clever-Cloud repo to your project => ``git remote add clever git+ssh://git@push.par.clever-cloud.com/<your-app-id>.git``
+6. Push your code to Clever-Cloud => ``git push clever master``
+7. Watch the logs and wait for your app to start
+7. Visit your application by clicking on the "Arrow" top-right button
+8. Have fun :)
