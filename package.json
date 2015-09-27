@@ -15,5 +15,8 @@
     "bugs": {
         "url": "https://github.com/CleverCloud/demo-meteorjs/issues"
     },
-    "homepage": "https://github.com/CleverCloud/demo-meteorjs"
+    "homepage": "https://github.com/CleverCloud/demo-meteorjs",
+    "engines": {
+        "node": "^0.10.40"
+    }
 }
