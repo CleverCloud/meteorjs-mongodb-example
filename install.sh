@@ -21,10 +21,10 @@ cd "$currentPath"
 #meteor run
 
 # demeteorize the app
-~/node_modules/.bin/demeteorizer -a "my_app" -o my_app/
+~/node_modules/.bin/demeteorizer -o my_app/
 
 # Go inside our demeteorized app to install modules
-cd my_app/
+cd my_app/bundle/programs/server/
 
 # Install modules
 npm install
