@@ -9,6 +9,7 @@ If you already have a Meteor.js application, all you have to do is:
 
 1. Add the ``install.sh`` file from this repo to your project and make it executable ``chmod a+x install.sh``
 2. Add the ``package.json`` file from this repo to your project and customize it for your needs but be sure to leave the ``scripts`` section untouched: ``"scripts": { "install": "./install.sh", "start": "node my_app/main.js" }``
+3. Use [GIT](https://git-scm.com/) to version this application
 
 ## Node v0.10.40 needed
 
