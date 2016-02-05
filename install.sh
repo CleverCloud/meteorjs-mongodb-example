@@ -3,10 +3,6 @@
 # Current path
 currentPath=$(realpath ./)
 
-# Install Meteorjs
-curl https://install.meteor.com/ | sh
-export PATH=/home/bas/.meteor:$PATH
-
 # Install demeteorizer
 cd ~/ && npm install demeteorizer
 
