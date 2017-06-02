@@ -1,20 +1,7 @@
 demo-meteorjs
-=================================
+=============
 
 Demo of deploying a Meteor.js application to Clever-Cloud
-
-## Preparations before pushing your code to Clever-Cloud
-
-If you already have a Meteor.js application, all you have to do is:
-
-1. Add the ``install.sh`` file from this repo to your project and make it executable ``chmod a+x install.sh``
-2. Add the ``package.json`` file from this repo to your project and customize it for your needs but be sure to leave the ``scripts`` section untouched: ``"scripts": { "install": "./install.sh", "start": "node my_app/main.js" }``
-3. Use [GIT](https://git-scm.com/) to version this application
-
-## Node v0.10.40 needed
-
-As of 27/09/15, if you want to use your own ``package.json`` file, be sure to specify the ``engines > node`` field to ``^0.10.40``.
-A submodule of demeteorizer (fibers@1.0.1) won't compile with above node versions.
 
 ### Deploying to Clever-Cloud
 
