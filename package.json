@@ -2,10 +2,6 @@
     "name": "demo-meteorjs",
     "version": "1.0.0",
     "description": "Meteor.js deployment demo for Clever-Cloud",
-    "scripts": {
-        "install": "./install.sh",
-        "start": "node my_app/bundle/main.js"
-    },
     "repository": {
         "type": "git",
         "url": "https://github.com/CleverCloud/demo-meteorjs"
