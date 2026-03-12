@@ -2,31 +2,29 @@ Clicks = new Mongo.Collection("clicks");
 
 if (Meteor.isClient) {
   Template.hello.helpers({
-    clicks: function () {
+    clicks() {
       return Clicks.findOne({});
     }
   });
 
   Template.hello.events({
-    'click button': function (e) {
-      // increment the counter when button is clicked
-      Meteor.call('update', e.target.getAttribute('data-id'));
+    "click button"(e) {
+      Meteor.callAsync("update", e.target.getAttribute("data-id"));
     }
   });
 }
 
 Meteor.methods({
-  update: function(counterID){
-    Clicks.update(counterID, {$inc: {counter: +1}});
+  async update(counterID) {
+    await Clicks.updateAsync(counterID, { $inc: { counter: 1 } });
   }
 });
 
 if (Meteor.isServer) {
-  Meteor.startup(function () {
-    if(Clicks.find().count() <= 0){
-      Clicks.insert({
-        counter: 0
-      });
+  Meteor.startup(async function () {
+    const count = await Clicks.find().countAsync();
+    if (count <= 0) {
+      await Clicks.insertAsync({ counter: 0 });
     }
   });
 }

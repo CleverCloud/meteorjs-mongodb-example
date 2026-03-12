@@ -12,3 +12,11 @@ notices-for-facebook-graph-api-2
 1.2.0-breaking-changes
 1.3.0-split-minifiers-package
 1.4.0-remove-old-dev-bundle-link
+1.4.3-split-account-service-packages
+1.5-add-dynamic-import-package
+1.7-split-underscore-from-meteor-base
+1.8.1-remove-patches-package
+1.8.3-split-account-service-packages
+2.0-add-fetch-package
+3.0-add-async-packages
+3.0-bson-remove-decimal128
